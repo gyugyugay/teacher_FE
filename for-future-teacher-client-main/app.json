@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "꿈꾸는 임용",
+    "slug": "for-future-teacher",
+    "version": "1.0.6",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "icon": "./src/shared/assets/images/logo/app-logo.png",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "image": "./src/shared/assets/images/logo/app-logo.png"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "foregroundImage": "./src/shared/assets/images/logo/app-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.forfutureteacher.app",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "root": "./src/app"
+        }
+      ],
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "029c27db-4613-4572-9b02-cb0fda26f444"
+      }
+    }
+  }
+}

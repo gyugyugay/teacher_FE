@@ -1,0 +1,81 @@
+{
+  "Component Template": {
+    "prefix": "cmp",
+    "body": [
+      "import { StyleSheet, View } from 'react-native';",
+      "",
+      "function $1() {",
+      "  return <View style={styles.container}></View>;",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    width: '100%',",
+      "    height: '100%',",
+      "  },",
+      "});",
+      "",
+      "export { $1 };"
+    ],
+    "description": "Basic Template for a React Component(whole file)"
+  },
+
+  "Container Style Template": {
+    "prefix": "con",
+    "body": [
+      "$1: {",
+      "  width: convertWidth($2),",
+      "  height: convertHeight($3),",
+      "  backgroundColor: '$4',",
+      "},"
+    ],
+    "description": "Basic Template for a Container style(only style)"
+  },
+
+  "Text Style Template": {
+    "prefix": "font",
+    "body": ["fontSize: $1,", "fontFamily: 'Pretendard-$2',", "color: $3,"],
+    "description": "Basic Template for a Text style(only style)"
+  },
+
+  "Zustand Store Template": {
+    "prefix": "store",
+    "body": [
+      "import { create } from 'zustand';",
+      "",
+      "type State = {",
+      "  // state1: boolean;",
+      "  // state2: Array<boolean>;",
+      "};",
+      "",
+      "const defaultState: State = {",
+      "  // state1: false,",
+      "  // state2: [],",
+      "};",
+      "",
+      "type Action = {",
+      "  // action1: () => void;",
+      "  // action2: (idx: number) => void;",
+      "};",
+      "",
+      "const use$1Store = create<State & Action>((set) => ({",
+      "  ...defaultState,",
+      "",
+      "  // //actions",
+      "  // action1: () =>",
+      "  //   set((state) => ({",
+      "  //    ...state",
+      "  //   })),",
+      "  // action2: (idx) =>",
+      "  //   set((state) => ({",
+      "  //    ...state",
+      "  //   })),",
+      "",
+      "}));",
+      "",
+      "export { use$1Store };"
+    ],
+    "description": "Template for a Zustand store with default state and actions"
+  }
+}
